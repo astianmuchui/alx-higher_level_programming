@@ -8,4 +8,5 @@ def print_last_digit(number):
     if number == 0:
         last_dig = 0
 
-    print(last_dig)
+    print(last_dig, end="")
+    return last_dig
