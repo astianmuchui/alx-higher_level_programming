@@ -2,7 +2,7 @@
 def roman_to_int(roman_string):
 
     if not roman_string or type(roman_string) != str:
-        return None
+        return 0
 
     if "IV" in roman_string:
         roman_string = roman_string.replace("IV", "4")
@@ -32,5 +32,5 @@ def roman_to_int(roman_string):
             sum += int(i)
 
         else:
-            return None
+            return 0
     return sum
