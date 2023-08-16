@@ -1,9 +1,14 @@
 #!/usr/bin/python3
-
 def roman_to_int(roman_string):
 
     if not roman_string or isinstance(roman_string, str) is False:
         return None
+
+    if "IV" in roman_string:
+        roman_string = roman_string.replace("IV", "4")
+
+    elif "IX" in roman_string:
+        roman_string = roman_string.replace("IX", "9")
 
     param_t = [x.upper() for x in roman_string]
 
@@ -19,8 +24,13 @@ def roman_to_int(roman_string):
 
     sum = 0
     for i in param_t:
+
         if dict_t.get(i):
             sum += dict_t.get(i)
+
+        elif int(i):
+            sum += int(i)
+
         else:
             return None
     return sum
