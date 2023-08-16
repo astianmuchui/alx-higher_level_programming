@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 
 def roman_to_int(roman_string):
+
     if not roman_string or isinstance(roman_string, str) is False:
         return None
 
@@ -16,7 +17,6 @@ def roman_to_int(roman_string):
         "M": 1000
     }
 
-    keys = dict_t.keys
     sum = 0
     for i in param_t:
         if dict_t.get(i):
