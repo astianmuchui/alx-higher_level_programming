@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 def roman_to_int(roman_string):
 
-    if not roman_string or isinstance(roman_string, str) is False:
+    if not roman_string or type(roman_string) != str:
         return None
 
     if "IV" in roman_string:
