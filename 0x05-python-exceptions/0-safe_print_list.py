@@ -1,15 +1,12 @@
-#!usr/bin/python3
-
+#!/usr/bin/python3
 def safe_print_list(my_list=[], x=0):
-    new = []
-
     try:
+        val = 0
         for i in range(x):
-            new.append(my_list[i])
-            print(my_list[i], end="")
-
+            print("{}".format(my_list[i]), end="")
+            val += 1
+        print()
+        return val
     except Exception:
+        print()
         pass
-
-    print()
-    return x
