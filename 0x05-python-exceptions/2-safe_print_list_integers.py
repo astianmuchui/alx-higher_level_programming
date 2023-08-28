@@ -10,12 +10,8 @@ def safe_print_list_integers(my_list=[], x=0):
                 j += 1
             else:
                 pass
-    except IndexError:
+    except Exception:
         pass
 
-    except TypeError:
-        pass
-
-    finally:
-        print()
-        return (j)
+    print()
+    return (j)
