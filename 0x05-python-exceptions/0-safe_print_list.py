@@ -7,8 +7,9 @@ def safe_print_list(my_list=[], x=0):
         for i in range(x):
             new.append(my_list[i])
             print(my_list[i], end="")
-    except IndexError:
+
+    except Exception:
         pass
-    finally:
-        print()
-        return x
+
+    print()
+    return x
