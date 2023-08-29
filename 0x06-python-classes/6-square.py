@@ -52,6 +52,11 @@ class Square:
                     print("#", end="")
                 print()
 
+    @property
+    def position(self):
+        ''' Public instance method to return the position '''
+        return self.__position
+
     @position.setter
     def position(self, value):
         ''' Public instance method to set the position '''
