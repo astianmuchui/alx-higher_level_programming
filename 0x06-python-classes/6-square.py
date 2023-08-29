@@ -37,16 +37,6 @@ class Square:
         else:
             self.__size = value
 
-    def my_print(self):
-        ''' Public instance method to print the square using character # '''
-        if self.__size == 0:
-            print()
-        else:
-            for i in range(self.__size):
-                for j in range(self.__size):
-                    print("#", end="")
-                print()
-
     @property
     def position(self):
         ''' Public instance method to return the position '''
@@ -62,4 +52,13 @@ class Square:
         else:
             self.__position = value
 
+    def my_print(self):
+        ''' Public instance method to print the square using character # '''
+        if self.__size == 0:
+            print()
+        else:
+            for i in range(self.__size):
+                for j in range(self.__size):
+                    print("#", end="")
+                print()
     pass
