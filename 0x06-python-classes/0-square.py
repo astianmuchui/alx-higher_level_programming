@@ -7,4 +7,5 @@ class Square:
     ''' Empty class to define a square '''
     pass
 
+
 sq = Square()
