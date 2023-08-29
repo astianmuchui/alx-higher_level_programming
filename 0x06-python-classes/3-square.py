@@ -2,6 +2,7 @@
 
 ''' An Empty class to define a square '''
 
+
 class Square:
 
     ''' Empty class to define a square and its size attribute'''
@@ -20,7 +21,7 @@ class Square:
             raise ValueError("size must be >= 0")
         else:
             self.__size = size
-    
+
     def area(self):
         ''' Public instance method that returns the area, in essence size^2 '''
         return (self.__size ** 2)
