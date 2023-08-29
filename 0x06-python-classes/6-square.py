@@ -15,13 +15,8 @@ class Square:
         so you, as class builder, must control the type and value of
         this attribute. One way to have the control is to keep it privately.'''
 
-        if not isinstance(size, int):
-            raise TypeError("size must be an integer")
-        elif size < 0:
-            raise ValueError("size must be >= 0")
-        else:
-            self.__size = size
-            self.__position = position
+        self.__size = size
+        self.__position = position
 
     def area(self):
         ''' Public instance method that returns the area, in essence size^2 '''
