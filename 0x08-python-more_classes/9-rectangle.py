@@ -28,7 +28,7 @@ class Rectangle:
             self.__height = height
 
     def __str__(self):
-        ''' Returns a # representation of the rectangle
+        ''' Returns a symbolic representation of the rectangle
         To be used with print() and str() built-in
         functions'''
 
