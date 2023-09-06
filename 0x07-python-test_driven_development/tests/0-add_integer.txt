@@ -1,0 +1,48 @@
+===========================
+0-add_integer.py
+===========================
+
+``add_integer()`` computes the sum of its args, but one is already defined hence an optional argument.
+
+::
+
+	>>> add_integer = __import__('0-add_integer').add_integer
+        >>> add_integer(0)
+        98
+ 
+For floats the arguments are first cast to integers then computed.
+ 
+::
+
+	>>> add_integer(2.1, 3.3)
+        5
+
+Adding a float to an int.
+
+::
+	>>> add_integer(9.1, 3.3)
+        12
+
+The First argument must be an integer or float, else a TypeError exception is raised.
+
+::
+ 
+        >>> add_integer("cody", 38)
+        Traceback (most recent call last):
+        TypeError: a must be an integer
+
+The Second argument must be an integer or float, else a TypeError exception is raised.
+
+::
+
+        >>> add_integer(39, "rhodes")
+        Traceback (most recent call last):
+        TypeError: b must be an integer
+
+If both arguments are string literals, a TypeError exception is raised.
+
+::
+
+        >>> add_integer("cody", "rhodes")
+        Traceback (most recent call last):
+        TypeError: a must be an integer
