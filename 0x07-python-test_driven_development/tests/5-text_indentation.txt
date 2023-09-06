@@ -1,0 +1,28 @@
+================================
+How to use 5-text_indentation.py
+================================
+
+``text_indentation()``
+prints text with 2 new lines after each instance of the below
+(. ? :)
+
+::
+
+	>>> text_indentation = __import__('5-text_indentation').text_indentation
+	>>> text_indentation("Hello world. My name is Sebastian Muchui")
+	Hello world.
+	<BLANKLINE>
+	My name is Sebastian Muchui
+
+text must be a string, otherwise raise a TypeError exception
+
+::
+
+	>>> text_indentation(222)
+	Traceback (most recent call last):
+	TypeError: text must be a string
+
+	>>> text_indentation("Duct tape? Are you serious?")
+	Duct tape?
+	<BLANKLINE>
+	Are you serious?

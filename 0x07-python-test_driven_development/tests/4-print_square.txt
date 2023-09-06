@@ -1,0 +1,37 @@
+===========================
+How to use 4-print_square.py
+============================
+
+``print_square()`` prints a square with the character #
+
+::
+
+	>>> print_square = __import__('4-print_square').print_square
+	>>> print_square(3)
+	###
+	###
+	###
+
+size must be an int, otherwise raise a TypeError exception with a message.
+
+::
+
+	>>> print_square("r")
+	Traceback (most recent call last):
+	TypeError: size must be an integer
+
+if size is less than 0, raise a ValueError exception with a message.
+
+::
+
+	>>> print_square(-1)
+	Traceback (most recent call last):
+	ValueError: size must be >= 0
+
+if size is a floating point number that is less than 0, raise a TypeError exception with a message.
+
+::
+
+	>>> print_square(-4.3)
+	Traceback (most recent call last):
+	TypeError: size must be an integer
