@@ -4,9 +4,11 @@
 
 
 class Square:
+
     ''' Empty class to define a square and its size attribute'''
 
     def __init__(self, size=0):
+
         ''' Size is a private instance attribute for class square,
         The size of a square is crucial for the square, many things
         depend of it(area computation, etc.),
@@ -19,5 +21,9 @@ class Square:
             raise ValueError("size must be >= 0")
         else:
             self.__size = size
+
+    def area(self):
+        ''' Public instance method that returns the area, in essence size^2 '''
+        return (self.__size ** 2)
 
     pass
