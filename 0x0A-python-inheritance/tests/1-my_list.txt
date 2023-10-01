@@ -1,0 +1,37 @@
+Module ``1-my_list``
+====================
+
+Class ``MyList``
+-----------------
+
+import the class ``MyList`` from module ``1-my_list``:
+        >>> MyList = __import__("1-my_list").MyList
+
+Check if module ``MyList`` has docstring:
+         >>> mod = __import__("1-my_list").__doc__
+         >>> len(mod) > 1
+         True
+
+Check if class ``MyList`` has docstring:
+         >>> cls = __import__("1-my_list").MyList.__doc__
+         >>> len(cls) > 1
+         True
+
+Check for docstring in the method:
+	 >>> mtd = __import__("1-my_list").MyList.print_sorted.__doc__
+	 >>> len(mtd) > 1
+	 True
+
+Assert that MyList inherits from list:
+	 >>> issubclass(MyList, list)
+	 True
+
+Check if the list is empty:
+	 >>> lst = MyList()
+	 >>> lst.print_sorted()
+	 []
+
+Assert that the list is sorted:
+                >>> lst = MyList([1, 2, 9, 7])
+                >>> lst.print_sorted()
+                [1, 2, 7, 9]
