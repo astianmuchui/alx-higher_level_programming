@@ -4,6 +4,7 @@ import json
 A module to load an object from a .json file
 """
 
+
 def load_from_json_file(filename):
     """
     Function to derive an object from a .json file
