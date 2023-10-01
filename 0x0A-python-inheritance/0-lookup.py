@@ -1,9 +1,5 @@
 #!/usr/bin/python3
 
-'''
-    Returns the list of available attributes and methods in an obj
-'''
-
 
 def lookup(obj):
     '''
