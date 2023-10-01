@@ -1,0 +1,47 @@
+Module ``BaseGeometry``
+
+======================
+
+Class ``BaseGeometry```
+----------------------
+
+import the class ``BaseGeometry``:
+        >>> BaseGeometry = __import__("7-base_geometry").BaseGeometry
+
+
+Check if module ``BaseGeometry`` has docstring:
+         >>> mod = __import__("7-base_geometry").__doc__
+         >>> len(mod) > 1
+         True
+
+Check if class ``BaseGeometry`` has docstring:
+         >>> cls = __import__("7-base_geometry").BaseGeometry.__doc__
+         >>> len(cls) > 1
+         True
+
+Test Area method:
+         >>> base_geometry = BaseGeometry()
+         >>> base_geometry.area()
+         Traceback (most recent call last):
+         ...
+         Exception: area() is not implemented
+
+TypeError check for value attr:
+	 >>> base_geometry = BaseGeometry()
+	 >>> base_geometry.integer_validator("x", "7")
+	 Traceback (most recent call last):
+	 ...
+	 TypeError: x must be an integer
+
+Testing:
+	 >>> base_geometry = BaseGeometry()
+	 >>> base_geometry.integer_validator("y", 0)
+	 Traceback (most recent call last):
+	 ...
+	 ValueError: y must be greater than 0
+
+Testing:
+	 >>> base_geometry.integer_validator("x", -7)
+	 Traceback (most recent call last):
+	 ...
+	 ValueError: x must be greater than 0
