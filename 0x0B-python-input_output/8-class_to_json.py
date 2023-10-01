@@ -1,5 +1,10 @@
 #!/usr/bin/python3
 
+"""
+Converts an object to a JSON representation
+"""
+
+
 def class_to_json(obj):
     """
     Function that returns the dictionary description

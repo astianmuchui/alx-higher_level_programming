@@ -1,4 +1,9 @@
 #!/usr/bin/python3
+"""
+Class student that defines a student by
+first name, last name and age
+"""
+
 
 class Student:
     def __init__(self, first_name, last_name, age):
