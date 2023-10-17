@@ -7,7 +7,7 @@ CREATE TABLE IF NOT EXISTS `second_table`(
         score INT
 );
 
-INSERT INTO `cart` (`id`, `name`, `score`, `created_on`) VALUES
+INSERT INTO `second_table` (`id`, `name`, `score`, `created_on`) VALUES
 (1, 'John', 10),
 (2, 'Alex', 3),
 (3, 'Bob', 14),
