@@ -1,0 +1,14 @@
+{
+  "name": "0x12-javascript-warm_up",
+  "version": "1.0.0",
+  "description": "",
+  "main": "0-javascript_is_amazing.js",
+  "scripts": {
+    "test": "semistandard"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "semistandard": "^17.0.0"
+  }
+}
