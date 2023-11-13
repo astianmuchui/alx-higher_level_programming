@@ -7,5 +7,5 @@ if (args === 0) {
 } else if (args === 1) {
   console.log('Argument Found');
 } else {
-  console.log(`Arguments  ${args}`);
+  console.log('Arguments Found');
 }
