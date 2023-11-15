@@ -2,13 +2,12 @@
 const process = require('process');
 const arg = process.argv[2];
 
-function factorial (a) {
-  let b = 1;
-  while (a > 1) {
-    b *= a;
-    a--;
+function factorial (n) {
+  if (n === 0 || n === 1) {
+    return (1);
+  } else {
+    return (n * factorial(n - 1));
   }
-  return (b);
 }
 
 if (isNaN(parseInt(arg))) {
