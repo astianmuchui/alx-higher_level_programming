@@ -11,10 +11,8 @@ if __name__ == "__main__":
                        passwd=argv[2], db=argv[3], port=3306)
 
     cursor = conn.cursor()
-    cursor.prepare("SELECT * FROM `states` WHERE name\
-                   LIKE  :p ORDER BY `states`.`id` ASC")
-
-    cursor.execute(["%" + argv[4] + "%"])
+    cursor.execute("SELECT * FROM `states` WHERE name\
+                   LIKE" + argv[4] + " ORDER BY `states`.`id` ASC")
 
     for row in cursor.fetchall():
         print(row)
