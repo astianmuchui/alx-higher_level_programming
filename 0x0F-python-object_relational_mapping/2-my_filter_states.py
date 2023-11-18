@@ -14,7 +14,8 @@ if __name__ == "__main__":
     cursor.prepare("SELECT * FROM `states` WHERE name\
                    LIKE  :p ORDER BY `states`.`id` ASC")
 
-    cursor.execute([argv[4]])
+    cursor.execute(["%" + argv[4] + "%"])
+
     for row in cursor.fetchall():
         print(row)
 
