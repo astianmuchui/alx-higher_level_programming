@@ -11,7 +11,7 @@ if __name__ == "__main__":
 
     cursor = conn.cursor()
     cursor.execute(
-        """SELECT cities.name
+        """SELECT cities.id, cities.name, states.name
         FROM cities
         JOIN states
         ON states.id = cities.state_id
@@ -20,7 +20,7 @@ if __name__ == "__main__":
     )
 
     for row in cursor.fetchall():
-        print(str(row))
+        print(row, end=",")
 
     cursor.close()
     conn.close()
