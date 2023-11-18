@@ -12,7 +12,7 @@ if __name__ == "__main__":
 
     cursor = conn.cursor()
     cursor.execute("SELECT * FROM `states` WHERE name\
-                   LIKE '%{}%' ORDER BY `states`.`id` ASC"
+                   LIKE BINARY '%{}%' ORDER BY `states`.`id` ASC"
                    .format(argv[4]))
 
     for row in cursor.fetchall():
