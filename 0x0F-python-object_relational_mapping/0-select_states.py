@@ -4,15 +4,18 @@
 """
 
 if __name__ == "__main__":
-        import MySQLdb as sql
-        from sys import argv
-        import sqlalchemy as orm
+    import MySQLdb as sql
+    from sys import argv
+    import sqlalchemy as orm
 
-        conn = orm.connect(host="localhost", user=argv[2], passwd=argv[3], db=argv[4], port=3306)
+    conn = orm.connect(host="localhost", user=argv[2],
+                       passwd=argv[3], db=argv[4], port=3306)
 
-        if conn:
-                cursor = conn.cursor()
-                cursor.execute("SELECT * FROM states ORDER BY id ASC")
+    if conn:
+        cursor = conn.cursor()
+        cursor.execute("SELECT * FROM states ORDER BY id ASC")
 
-                for row in cursor.fetchall():
-                        print(row)
+        for row in cursor.fetchall():
+            print(row)
+        cursor.close()
+    conn.close()
