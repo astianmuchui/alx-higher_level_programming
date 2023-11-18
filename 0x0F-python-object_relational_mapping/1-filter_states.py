@@ -11,7 +11,7 @@ if __name__ == "__main__":
 
     cursor = conn.cursor()
     cursor.execute("SELECT * FROM `states` WHERE name\
-                   LIKE 'N' ORDER BY `states`.`id` ASC")
+                   LIKE 'N%' ORDER BY `states`.`id` ASC")
 
     for row in cursor.fetchall():
         print(row)
