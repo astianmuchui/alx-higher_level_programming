@@ -11,11 +11,11 @@ if __name__ == "__main__":
     conn = orm.connect(host="localhost", user=argv[2],
                        passwd=argv[3], db=argv[4], port=3306)
 
-    if conn:
-        cursor = conn.cursor()
-        cursor.execute("SELECT * FROM states ORDER BY id ASC")
+    cursor = conn.cursor()
+    cursor.execute("SELECT * FROM states ORDER BY id ASC")
 
-        for row in cursor.fetchall():
-            print(row)
-        cursor.close()
+    for row in cursor.fetchall():
+        print(row)
+    
+    cursor.close()
     conn.close()
