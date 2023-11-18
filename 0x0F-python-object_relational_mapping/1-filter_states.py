@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 
 """Module to list all states from the database hbtn_0e_0_usa
+Starting with N
 """
 
 if __name__ == "__main__":
@@ -11,7 +12,7 @@ if __name__ == "__main__":
 
     cursor = conn.cursor()
     cursor.execute("SELECT * FROM `states` WHERE name\
-                   LIKE 'N%' ORDER BY `states`.`id` ASC")
+                   LIKE BINARY 'N%' ORDER BY `states`.`id` ASC")
 
     for row in cursor.fetchall():
         print(row)
