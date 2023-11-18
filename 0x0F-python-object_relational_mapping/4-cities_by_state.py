@@ -20,7 +20,7 @@ if __name__ == "__main__":
     )
 
     for row in cursor.fetchall():
-        print(row)
+        print(row.name, end=",")
 
     cursor.close()
     conn.close()
