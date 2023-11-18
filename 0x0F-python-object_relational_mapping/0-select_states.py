@@ -6,9 +6,7 @@
 if __name__ == "__main__":
     import MySQLdb as sql
     from sys import argv
-    import sqlalchemy as orm
-
-    conn = orm.connect(host="localhost", user=argv[2],
+    conn = sql.connect(host="localhost", user=argv[2],
                        passwd=argv[3], db=argv[4], port=3306)
 
     cursor = conn.cursor()
