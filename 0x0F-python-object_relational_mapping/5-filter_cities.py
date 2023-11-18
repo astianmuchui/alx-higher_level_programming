@@ -22,6 +22,6 @@ if __name__ == "__main__":
 
     for row in cursor.fetchall():
         print(row[0], end=", ")
-
+    print()
     cursor.close()
     conn.close()
