@@ -11,7 +11,7 @@ if __name__ == "__main__":
 
     cursor = conn.cursor()
     cursor.execute(
-        """SELECT name
+        """SELECT cities.name
         FROM cities
         JOIN states
         ON states.id = cities.state_id
