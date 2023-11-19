@@ -20,8 +20,9 @@ if __name__ == "__main__":
         ORDER BY cities.id ASC""", (argv[4],)
     )
 
-    for row in cursor.fetchall():
-        print(row[0], end=", ")
-    print()
+
+    cities = [row[0] for row in cursor.fetchall()]
+    print(', '.join(cities))
+
     cursor.close()
     conn.close()
