@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 """Module to list all cities from the database hbtn_0e_0_usa
-that match the argument
+that match the argument provided
 """
 
 if __name__ == "__main__":
