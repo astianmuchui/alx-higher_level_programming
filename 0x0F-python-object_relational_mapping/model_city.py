@@ -7,6 +7,7 @@ Module to define the City model
 from sqlalchemy import Column, Integer, String, ForeignKey
 from model_state import Base, State
 
+
 class City(Base):
     """
     City class inherits from Base
