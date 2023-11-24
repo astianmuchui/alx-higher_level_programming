@@ -5,8 +5,9 @@ Module to list all State objects from the database hbtn_0e_6_usa
 """
 
 if __name__ == "__main__":
-    from sqlalchemy import create_engine, sessionmaker
+    from sqlalchemy import create_engine
     from sqlalchemy.ext.declarative import declarative_base
+    from sqlalchemy.orm import sessionmaker
     from model_state import Base, State
     import sys
 
