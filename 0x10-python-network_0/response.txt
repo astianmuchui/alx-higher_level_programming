@@ -1,0 +1,269 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/img/logo.png" type="image/x-icon"> 
+    <meta name="theme-color" content="#1a0131">
+    <meta name="description" content="Inspired by the need to grow small businesses, maridadi online is dedicated to providing you with a platform to buy and sell with ease. With a heavy focus on the casual citizen, we strive to bring our online marketplace to even the smallest of businesses. Join us today and embark on a wonderful business journey">
+    <meta name="keywords" content="maridadi online">
+    <meta name="author" content="Sebastian Muchui">
+    <meta property="og:image" content="https://maridadionline.com/assets/img/logo.png" />
+
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <script src="./assets/js/font_awesome_main.js"></script>
+    <title>Maridadi Online</title>
+</head>
+<body>
+
+    
+
+<header class="desktop-header">
+
+    <div class="title">
+
+        <a href="https://maridadionline.com/">
+            <img src="https://maridadionline.com/assets/img/m_logo.png" alt="" height="45px">
+        </a>
+
+    </div>
+
+    <div class="search-bar">
+        <form action="/index.php" method="POST">
+            <input type="text" name="sr" id="" placeholder="Search Products">
+            <button type="submit" name="search"><i class="fas fa-search"></i></button>
+        </form>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="https://maridadionline.com/">Home</a></li>
+            <li><a href="https://maridadionline.com/#about">About</a></li>
+            <li><a href="https://maridadionline.com/shop">Shop</a></li>
+            <li><a href="https://maridadionline.com/suppliers">Suppliers</a></li>
+            <li><a href="https://maridadionline.com/signup">Signup</a></li>
+            <li><a href="https://maridadionline.com/profile/cart"> <i class="fas fa-shopping-cart"></i><span class="cart-int cart_count">0</span></a></li>
+        </ul>
+    </nav>
+
+    <div class="hamburger" id="hamburger">
+        <div class="lines ">
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</header>
+
+<div class="menu" id="menu">
+
+    <span class="close">&times;</span>
+
+    <div class="search-bar" >
+        <form action="#">
+            <input type="text" name="" id="" placeholder="Search Products">
+            <button type="submit" name="search"><i  class="fas fa-search"></i></button>
+        </form>
+    </div>
+
+    <nav>
+        <ul>
+
+            <li><a href="https://maridadionline.com/">Home</a></li>
+            <li><a href="https://maridadionline.com/#about">About</a></li>
+            <li><a href="https://maridadionline.com/shop">Shop</a></li>
+            <li><a href="https://maridadionline.com/suppliers">Suppliers</a></li>
+            <li><a href="https://maridadionline.com/signup">Signup</a></li>
+            <li><a href="https://maridadionline.com/profile/cart"> My Cart <i class="fas fa-shopping-cart"></i><span class="cart_count">0</span></a></li>
+
+        </ul>
+    </nav>
+
+</div>
+
+<script>
+    let hamburger = document.getElementById("hamburger");
+    let menu = document.getElementById("menu");
+    let close = document.querySelector(".close");
+
+    hamburger.addEventListener("click", function(){
+        menu.style.display = "block";
+    });
+
+    close.addEventListener("click", function(){
+        console.log("clicked");
+        menu.style.display = "none";
+    });
+</script>    
+
+    <main class="flex-column">
+        
+            <div class="wrapper grid-2">
+
+                <img src="./assets/img/bowl.png" alt="">
+
+                <div class="gr gr-1 x-start ">
+                    <h1 class="" >Buy and Sell your Products with <b>Ease</b> !</h1>
+                    
+                    <p>Welcome to maridadi online! We're delighted to have you here, where shopping meets convenience and endless possibilities. Explore our vast collection of products tailored to suit your needs and desires.</p>
+                    <a href="./shop/" class="btn-primary"> <i class="fas fa-ship"></i> Start Shopping  </a>
+                </div>
+    
+               
+            </div>
+       
+
+    </main> 
+       <section class="features" id="features">
+
+        <div class="wrapper grid-2">
+
+            <div class="gr gr-1 flex-column ">
+            <div class="border-primary"></div>
+                <h2>Imagine a shop where....</h2>
+
+            <img src="./assets/img/shopping.png" alt="">
+                <p>
+                   Quality is the top priority. That is why, with our unwavering commitment to excellence, we have meticulously crafted a shop that caters to the unique needs of our discerning clientele. Our methodically chosen product array boasts an impressive range, carefully selected to enhance every aspect of your shopping experience, thereby transforming it into a truly delightful experience.
+                </p>
+                <a href="./shop/" class="btn-primary"> <i class="fas fa-shopping-cart"></i> Visit shop</a>
+            </div>
+
+            <img src="./assets/img/shopping.png" alt="">
+           
+        </div>
+
+    </section>
+
+    <section class="supplier flex-column" >
+        <div class="container grid-2">
+            <div class="grid-item">
+                <!-- <img src="./assets/img/sell.png" alt="" width="450px" height="400px"> -->
+                <img src="./assets/img/invoice.png" alt="" width="450px" height="400px">
+
+            </div>
+            <div class="grid-item">
+                <div class="border-primary"></div>
+                <h2 class="text-primary"> What If You Could Sell Too ? </h2>
+                <p>
+                     You actually can! Join a plethora successful business people who have trusted us to sell their
+                     products. Our platform offers a user-friendly interface, 
+                     advanced analytics, and a wide audience of potential customers. 
+                      We are dedicated to helping you reach your sales goals
+                      and maximizing your profits. Sign up today and start selling with us.
+                    
+                </p> <br>
+                <a href="./suppliers/" class="btn-primary"> <i class="fas fa-truck"></i> Register now</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="about flex-column " id="about">
+        <div class="container">
+
+            <div class="grid-item flex-column">
+
+                <div class="border-primary"></div>
+                <h1 class="text-primary text-bold"> About Maridadi Online </h1>
+                <img src="./assets/img/building.png" alt="">
+                <p class="text-primary">
+                    Inspired by the need to grow small businesses, maridadi online is dedicated to providing you with a platform to buy and sell with ease. With a heavy focus on the casual citizen, we strive to bring our online marketplace to even the smallest of businesses. Join us today and embark on a wonderful journey
+                </p> <br>
+                <a href="./signup/" class="btn-primary"> <i class="fas fa-user"></i> Signup Now</a>
+            </div>
+
+            <div class="grid-item flex-column">
+                <div class="border-primary"></div>
+
+                <h2 class="text-primary">Let's  Get In Touch</h2>
+                <img src="./assets/img/message.png" alt="">
+
+            
+                    <p><i class="fas fa-phone-alt "></i> +254 713 785563</p>
+                    <p><i class="far fa-envelope "></i> maridadionlineke@gmail.com</p>
+                    <p><i class="fa fa-map-marker"></i> Kiambu Kenya </p>
+                    <p> <i class="fab fa-twitter"></i> @OnlineMaridadi</p>
+                    <p> <i class="fab fa-instagram"></i> @maridadionline.ke</p>
+            
+
+
+            </div>
+        </div>
+    </section>
+
+    <section class="contact flex-column" id="contact">
+      <h2 class="text-primary"> Contact Us</h2>
+        <div class="form-container ">
+
+            <form action="/index.php" method="POST" class="flex-column">
+
+                <input type="text" name="name" id="" placeholder="Name">
+                <input type="text" name="email" id="" placeholder="Email">
+                <input type="text" name="phone" id="" placeholder="Phone Number">
+                <input type="text" name="subject" id="" placeholder="Subject">   
+                <textarea name="message" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                <button type="submit" name="submit" class="btn-primary">Send Message</button>
+            </form>
+        </div>
+
+    </section>
+
+    
+    <footer class="flex-column" >
+        <div class="container grid-4">
+            <div class="logo-section flex-column ">
+                 <a href="https://maridadionline.com/"><img src="https://maridadionline.com//assets/img/m_logo.png" alt="" width="150px"></a>  <br>
+                
+            </div>
+            <div class="quick-links y-start x-start">
+                <h3 class="text-gold text-bold ">Useful Links</h3>
+             
+                        <li><a href="https://maridadionline.com/" class="text-light">Home</a></li>
+                        <li><a href="https://maridadionline.com/shop" class="text-light">Shop</a></li>
+                        <li><a href="https://maridadionline.com/#contact" class="text-light">Contact</a></li>
+                        <li><a href="https://maridadionline.com/profile" class="text-light">Account</a></li>
+                        <li><a href="https://maridadionline.com/suppliers" class="text-light">Suppliers</a></li>
+                    
+            </div>
+  
+            <div class="product-categories y-start x-start">
+                <h3 class="text-gold text-bold">Categories</h3>
+
+                                                         
+                            <li><a href="https://maridadionline.com//shop/#KISUMU CITY AIR-BNB SERVICES" class="text-light">KISUMU CITY AIR-BNB SERVICES </a></li>
+
+                                                        
+                            <li><a href="https://maridadionline.com//shop/#EDUCATION" class="text-light">EDUCATION</a></li>
+
+                                                        
+                            <li><a href="https://maridadionline.com//shop/#Beauty and Cosmetics" class="text-light">Beauty and Cosmetics </a></li>
+
+                                                        
+                            <li><a href="https://maridadionline.com//shop/#DRINKS" class="text-light">DRINKS </a></li>
+
+                                                        
+                            <li><a href="https://maridadionline.com//shop/#FURNITURE" class="text-light">FURNITURE</a></li>
+
+                                                        
+                            <li><a href="https://maridadionline.com//shop/#YOUTUBERS MERCHANDISE" class="text-light">YOUTUBERS MERCHANDISE</a></li>
+
+                            
+
+            </div>
+            <div class="contacts flex-column">
+                <div class="grid-4">
+                    <a href="tel:+254713785563"><i class="fas fa-phone-alt"></i></a>
+                    <a href="mailto: maridadionline.ke@gmail.com"><i class="far fa-envelope"></i></a>
+                    <a href="https://twitter.com/onlinemaridadi"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/maridadionline.ke/"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>  
+        </div>
+        
+        <small class="text-light" >Maridadi Online &copy; 2023 All rights Reserved <a href="https://github.com/Maridadi-Online/Maridadi-Online/raw/main/maridadi%20Terms%20and%20Conditions.docx" class="text-gold" download="https://github.com/Maridadi-Online/Maridadi-Online/raw/main/maridadi%20Terms%20and%20Conditions.docx">Terms and conditions</a>. Concept, Design and Integration by <a href="https://about.me/astianmuchui/" class="text-gold" >astianmuchui</a></small>
+    </footer>
+
+        <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3571395852227644" crossorigin="anonymous"></script> -->
+</body>
+</html>
